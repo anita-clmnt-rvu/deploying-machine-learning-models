@@ -12,6 +12,7 @@ matplotlib = "^3.5.1"
 ipykernel = "^6.9.0"
 scipy = "^1.8.0"
 sklearn = "^0.0"
+feature-engine = "^1.2.0"
 
 [tool.poetry.dev-dependencies]
 
