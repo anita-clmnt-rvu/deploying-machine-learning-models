@@ -1,0 +1,43 @@
+# Package Overview
+package_name: classification_model
+
+# Data Files
+training_data_file: train.csv
+test_data_file: test.csv
+
+# Variables
+# The variable we are attempting to predict (sale price)
+target: survived
+
+pipeline_name: classification_model
+pipeline_save_file: classification_model_output_v
+
+features:
+  - age
+  - fare
+  - sex
+  - cabin
+  - embarked
+  - title
+  
+
+# set train/test split
+test_size: 0.1
+
+# to set the random seed
+random_state: 0
+
+C: 0.0005
+
+categorical_vars:
+  - sex
+  - cabin
+  - embarked
+  - title
+
+numerical_vars:
+  - age
+  - fare
+
+cabin_vars:
+  - cabin
