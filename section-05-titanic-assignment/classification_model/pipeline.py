@@ -14,7 +14,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 
 from classification_model.config.core import config
-from classification_model.processing import ExtractLetterTransformer
+from classification_model.processing.features import ExtractLetterTransformer
 
 # set up the pipeline
 titanic_pipe = Pipeline([
