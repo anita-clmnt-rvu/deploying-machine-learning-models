@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import Dict, List, Sequence
+from typing import List
 
 from pydantic import BaseModel
 from strictyaml import YAML, load
@@ -32,27 +32,14 @@ class ModelConfig(BaseModel):
     """
 
     target: str
-    variables_to_rename: Dict
+    to_drop_vars: List[str]
     features: List[str]
     test_size: float
+    C: float
     random_state: int
-    alpha: float
-    categorical_vars_with_na_frequent: List[str]
-    categorical_vars_with_na_missing: List[str]
-    numerical_vars_with_na: List[str]
-    temporal_vars: List[str]
-    ref_var: str
-    numericals_log_vars: Sequence[str]
-    binarize_vars: Sequence[str]
-    qual_vars: List[str]
-    exposure_vars: List[str]
-    finish_vars: List[str]
-    garage_vars: List[str]
-    categorical_vars: Sequence[str]
-    qual_mappings: Dict[str, int]
-    exposure_mappings: Dict[str, int]
-    garage_mappings: Dict[str, int]
-    finish_mappings: Dict[str, int]
+    numerical_vars: List[str]
+    categorical_vars: List[str]
+    cabin_vars: List[str]
 
 
 class Config(BaseModel):

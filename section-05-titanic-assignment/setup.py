@@ -6,7 +6,7 @@ from pathlib import Path
 from setuptools import find_packages, setup
 
 # Package meta-data.
-NAME = 'titanic-classification-model'
+NAME = 'tid-titanic-classification-model'
 DESCRIPTION = "Classifiction model package from the Titanic dataset."
 URL = "https://github.com/anita-clmnt-rvu/deploying-machine-learning-models/section-05-titanic-assignment"
 EMAIL = "anita.clement@rvu.co.uk"

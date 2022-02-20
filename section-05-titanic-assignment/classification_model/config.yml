@@ -2,6 +2,7 @@
 package_name: classification_model
 
 # Data Files
+raw_data_file: raw.csv
 training_data_file: train.csv
 test_data_file: test.csv
 
@@ -13,6 +14,9 @@ pipeline_name: classification_model
 pipeline_save_file: classification_model_output_v
 
 features:
+  - pclass
+  - sibsp
+  - parch
   - age
   - fare
   - sex
@@ -28,6 +32,13 @@ test_size: 0.1
 random_state: 0
 
 C: 0.0005
+
+to_drop_vars:
+  - name 
+  - ticket
+  - boat
+  - body
+  - home.dest
 
 categorical_vars:
   - sex
