@@ -45,7 +45,7 @@ def pre_pipeline_preparation(*, dataframe: pd.DataFrame) -> pd.DataFrame:
     # 1 are available per passenger
     data["cabin"] = data["cabin"].apply(get_first_cabin)
 
-    data["title"] = data["name"].apply(get_title)
+    data["title"] = data["title"].apply(get_title)
 
     # cast numerical variables as floats
     data["fare"] = data["fare"].astype("float")
